@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}Membership{% endblock %}
+
+{% block content %}
+    <section class="membership-hero">
+        <h1>Choose Your Plan</h1>
+    </section>
+
+    <section class="pricing">
+        <div class="price-cards">
+            <div class="plan-selector">
+                <input type="radio" name="plan" id="basic" class="plan-radio">
+                <input type="radio" name="plan" id="premium" class="plan-radio" checked>
+                <input type="radio" name="plan" id="elite" class="plan-radio">
+                
+                <label for="basic" class="price-card">
+                    <h3>Basic</h3>
+                    <div class="price">$29<span>/month</span></div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Gym Access</li>
+                        <li><i class="fas fa-check"></i> Basic Equipment</li>
+                        <li><i class="fas fa-check"></i> Locker Room Access</li>
+                    </ul>
+                    <a href="#" class="signup-button">Sign Up</a>
+                </label>
+
+                <label for="premium" class="price-card">
+                    <h3>Premium</h3>
+                    <div class="price">$49<span>/month</span></div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> All Basic Features</li>
+                        <li><i class="fas fa-check"></i> Group Classes</li>
+                        <li><i class="fas fa-check"></i> Personal Trainer (2x/month)</li>
+                        <li><i class="fas fa-check"></i> Nutrition Consultation</li>
+                    </ul>
+                    <a href="#" class="signup-button">Sign Up</a>
+                </label>
+
+                <label for="elite" class="price-card">
+                    <h3>Elite</h3>
+                    <div class="price">$79<span>/month</span></div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> All Premium Features</li>
+                        <li><i class="fas fa-check"></i> Unlimited Personal Training</li>
+                        <li><i class="fas fa-check"></i> Spa Access</li>
+                        <li><i class="fas fa-check"></i> Recovery Room Access</li>
+                    </ul>
+                    <a href="#" class="signup-button">Sign Up</a>
+                </label>
+            </div>
+        </div>
+    </section>
+{% endblock %}
